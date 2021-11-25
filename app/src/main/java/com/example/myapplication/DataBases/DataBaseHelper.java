@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.DataBases;
 
 /*
     DataBaseHelper
@@ -6,12 +6,9 @@ package com.example.myapplication;
     related on DatabaseManager
  */
 
-import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
@@ -26,13 +23,14 @@ public class DataBaseHelper extends SQLiteOpenHelper {
             + "createdate text ,"
             + "title text ,"
             + "content text)";
-    private Context mcontext;
+
+    private Context mContext;
     public String getDatabaseTableName() {
         return DATABASE_TABLE_NAME;
     }
     public DataBaseHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
-        mcontext = context;
+        mContext = context;
     }
 
     public DataBaseHelper(Context context) {

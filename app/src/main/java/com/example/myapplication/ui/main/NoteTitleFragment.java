@@ -8,8 +8,6 @@ package com.example.myapplication.ui.main;
  */
 
 import android.content.Context;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -22,15 +20,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.myapplication.Bean.Author;
 import com.example.myapplication.Bean.Note;
-import com.example.myapplication.DataBaseHelper;
-import com.example.myapplication.DatabaseManager;
+import com.example.myapplication.DataBases.DatabaseManager;
 import com.example.myapplication.NoteAdapter;
 import com.example.myapplication.R;
 
-import java.util.ArrayList;
-import java.util.Currency;
 import java.util.List;
 
 public class NoteTitleFragment extends Fragment implements AdapterView.OnItemClickListener {

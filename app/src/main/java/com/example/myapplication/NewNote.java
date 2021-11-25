@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.myapplication.Bean.Note;
+import com.example.myapplication.DataBases.DatabaseManager;
 import com.example.myapplication.ui.main.NoteTitleFragment;
 
 public class NewNote extends AppCompatActivity {

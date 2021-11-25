@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button newNote = (Button) findViewById(R.id.new_note);
         newNote.setOnClickListener(v -> {
+//            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
             Intent intent = new Intent(this,NewNote.class);
             startActivity(intent);
         });
